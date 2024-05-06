@@ -48,7 +48,7 @@ def do_deploy(archive_path):
             ar_name
         ))
         run('rm -rf /data/web_static/current')
-        run('ln -s /data/web_static/releases/{}/ \
+        run('ln -fs /data/web_static/releases/{}/ \
             /data/web_static/current'.format(
             ar_name
         ))
